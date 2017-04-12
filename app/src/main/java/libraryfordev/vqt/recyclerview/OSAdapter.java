@@ -56,7 +56,12 @@ public class OSAdapter extends RecyclerView.Adapter<OSAdapter.ViewHolder> {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-//                    removedItems(getAdapterPosition());
+                   try {
+                       removedItems(getAdapterPosition());
+                   } catch (Exception e) {
+
+                   }
+
                 }
             });
         }
